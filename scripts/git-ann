@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# To extend git with Ann commands put this file into
+# /usr/local/bin and make it executable using chmod +x
+
+REPO_PATH="$(git rev-parse --show-toplevel)/"
+MAIN_PATH="$ANN_PATH/scripts/main.py"
+ACTION=$1
+python $MAIN_PATH $ACTION $REPO_PATH

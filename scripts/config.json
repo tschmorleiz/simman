@@ -1,0 +1,20 @@
+{
+	"fragments-tech": {
+		"hs": {
+			"language": "Haskell",
+			"runner": "runhaskell",
+			"extractor": "technologies/HsFactExtractor/HsFactExtractor.hs",
+			"locator": "technologies/HsFragmentLocator/HsFragmentLocator.hs",
+			"line-pp": "technologies/HsTokenizer/TokenLinePrinter.hs",
+			"classifier_blacklist": []
+		},
+		"java": {
+			"language": "Java",
+			"runner": "",
+			"extractor": "technologies/JFactExtractor/extractor.py",
+			"locator": "",
+			"classifier_blacklist": ["class"]
+		}
+
+	}
+}
