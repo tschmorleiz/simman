@@ -1,0 +1,29 @@
+{
+  "name": "annotator",
+  "version": "0.0.1",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "clones",
+    "similarities",
+    "annotations",
+    "ann"
+  ],
+  "author": "Thomas Schmorleiz",
+  "license": "ISC",
+  "dependencies": {
+    "q": "~1.1.2",
+    "express": "3.4.7",
+    "mongoose": "~3.8.20",
+    "mongoose-q": "0.0.13",
+    "semaphore": "~1.0.1",
+    "nodegit": "~0.2.3",
+    "nodegit-promise": "~1.0.0",
+    "promisify-node": "~0.1.5",
+    "ejs": "~1.0.0"
+  }
+}

@@ -1,0 +1,372 @@
+.navbar-brand .logo {
+	background-image: url("/images/galaxy.png");
+	background-position: right 5px top 35px;
+	width: 30px;
+	height: 30px;
+	border-radius: 50px;
+}
+
+.navbar-brand * {
+	float:left;
+}
+
+.navbar-brand div:not(:first-child) {
+	padding-top: 4px;
+	padding-left: 8px;
+}
+
+.navbar {
+	box-shadow: 0 4px 1px -2px #eee;
+}
+
+.navbar-brand {
+	padding: 10px !important;
+}
+
+.panel-heading h2 {
+	font-size: 20px;
+	margin: 0px;
+}
+
+.page-header {
+	font-size: 32px;
+	margin: 20px 0 20px;
+}
+
+.panel {
+	box-shadow: 0 0 2px 2px #eee;
+}
+
+.panel-heading {
+	padding: 8px 12px;
+}
+
+.panel-body {
+	overflow: auto;
+	max-height: 700px;
+}
+
+.panel-body h3 {
+	margin-top: 3px;
+	margin-bottom: 12px;
+	font-size: 16px;
+}
+
+ul .path {
+	color: #ddd;
+}
+
+footer {
+	color: #ccc;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+footer hr {
+	margin-top: 0px;
+	margin-bottom: 8px;
+}
+
+footer .fa-heart{
+	transition: color 0.2s ease;
+	transition: font-size 0.2s ease;
+	color: pink;
+}
+
+footer:hover .fa-heart {
+	transition: color 0.2s ease;
+	transition: font-size 0.2s ease;
+	font-size: 18px;
+	color: #EE90AA;
+}
+
+.message {
+	font-family: "Lucida Console", Monaco, monospace;
+}
+
+.variations .message {
+	height: 20px;
+	white-space: nowrap;
+	font-size: 14px;
+	overflow: hidden;
+	text-overflow: ellipsis; 
+}
+
+#stats .message {
+	font-size: 12px;
+}
+
+.label-create {
+	background-color: #4DA74D;
+}
+
+.label-delete {
+	background-color: #BF3030;
+}
+
+.label-rename {
+	background-color: #7A92A3;
+}
+
+.label-edit {
+	background-color: #EDC240;
+}
+
+#graph {
+	position: absolute;
+	height: 75%;
+  	width: 90%;
+  	border-radius: 2px;
+  	border: solid 1px #eee;
+}
+
+#variations .panel-body {
+	overflow: auto;
+	min-height: 1000px;
+}
+
+#similarities .panel-title {
+	font-size: 13px;
+}
+
+#similarities .panel-title .group-value {
+	font-family: monospace;
+}
+
+#similarities .panel-group .panel-heading {
+	padding: 4px;
+}
+
+#similarities .list-group-item {
+	padding: 5px 15px;
+	font-size: 10px;
+	font-family: monospace;
+}
+
+#similarities .panel-body, #commit-annotator .variations .panel-body {
+	height: 380px;
+	overflow: auto;
+}
+
+#annotations .panel-body {
+	height: 280px;
+	padding-top: 8px;
+	overflow: hidden;
+}
+
+#annotations-selection {
+	overflow: auto;
+	height: 250px;
+}
+
+#annotations .well {
+	padding: 10px;
+	clear: both;
+}
+
+.similarity-info {
+	margin-bottom: 5px;
+}
+
+.similarity-info > span {
+	float:left;
+}
+
+.similarity-info > button {
+	float: right;
+	margin-bottom: 5px;
+}
+
+.fragment-editor {
+	min-height: 100px;
+	border: 1px solid white;
+	border-radius: 4px;
+}
+
+.fragment-relation {
+	text-align: right;
+}
+
+.input-group > select.form-control {
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+}
+
+
+#directions-control {
+	font-family: 'FontAwesome';
+}
+
+#annotator-control-btns {
+	float: left;
+}
+
+.slider-horizontal {
+	margin-top: 15px;
+	margin-left: 20px;
+}
+
+circle.node {
+  cursor: pointer;
+  stroke: #000;
+  stroke-width: .5px;
+}
+
+line.link {
+  fill: none;
+  stroke: #9ecae1;
+  stroke-width: 1.5px;
+}
+
+.ranking-header {
+	font-size: 22px;
+	margin-top: 0px;
+	display: none;
+}
+
+#variant-similarities-controls {
+	display: none;
+	background-color: white;
+	margin-bottom: 100px;
+}
+
+#other-ranking .slider.slider-horizontal {
+	height: 0px;
+}
+
+#todos .panel-body {
+	max-height: 10000px;
+}
+
+#todos .panel-heading .checkbox {
+	float: right;
+}
+
+#todos td {
+	vertical-align: middle;
+	font-size: 14px;
+}
+
+#todos .auto-text {
+	width: 70px;
+}
+
+#todos .annotation-name {
+	background-color: rgba(255,255,255,0.8);
+}
+
+#todos .path {
+	float: left;
+}
+
+#todos .modal-dialog {
+	width: 70%;
+}
+#todos .expand {
+	color: #aaa;
+	float: right
+}
+
+#todos .expand:hover {
+	color: white;
+}
+
+.status.ready {
+	color: green;
+}
+
+#variant-tree {
+	border-right: solid #ccc 2px;
+}
+
+#similarities-tree ul, #variant-tree ul, #other-ranking ul {
+	color: black;
+	list-style-type: none;
+	padding-left: 0px;
+	margin-left: 0px;
+	font-size: 13px;
+}
+
+#other-ranking ul {
+	padding-left: 20px;
+}
+
+#similarities-tree label, #variant-tree label {
+	cursor: pointer;
+}
+
+#similarities-tree ul ul, #variant-tree ul ul {
+	padding-left: 4%;
+}
+
+#similarities-tree ul ul {
+	margin-bottom: 15px;
+}
+
+
+#similarities-tree label::before, #variant-tree label::before, #other-ranking label::before {
+	color: gray;
+}
+
+#similarities-tree label, #variant-tree label, #other-ranking label {
+	padding: 4px;
+	border-radius: 4px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #ccc;
+	font-weight:  500;
+}
+
+#variant-tree label, #other-ranking label {
+	width: 100%;
+}
+
+#other-ranking label.fragment {
+	cursor: pointer;
+}
+
+#similarities-tree label span.similarity-value, #variant-tree label span.similarity-count, #other-ranking label span.similarity-value {
+	float: right;
+	background-color: #ccc;
+	padding-left: 3px;
+	padding-right: 3px;
+	border-radius: 5px;
+}
+
+#similarities-tree > ul > li > label, #variant-tree > ul > li > label {
+	width: 96%;
+}
+
+#similarities-tree > ul > li > label::before {
+	content: "\2022  Commit ";
+	color: #0C5DA5;
+}
+
+#similarities-tree > ul ul label {
+	width: 96%;	
+}
+
+#similarities-tree > ul ul label::before, #variant-tree label.variant::before, #other-ranking label.variant::before {
+	content: "\2022  Variant ";
+	color: #FF9500;
+}
+
+#variant-tree label.folder::before, #other-ranking label.folder::before {
+	content: "\2022  Folder ";
+	color: #AC5685;
+}
+
+#similarities-tree > ul ul ul label::before, #variant-tree label.file::before, #other-ranking label.file::before {
+	content: "\2022  File ";
+	color: #E20048;
+}
+
+#similarities-tree > ul ul ul ul label::before, #variant-tree label.fragment::before, #other-ranking label.fragment::before {
+	content: "\2022  Fragment ";
+	color: #53B000;
+}
+
+span.location {
+	color: #aaa;
+	font-size: 11px;
+}
