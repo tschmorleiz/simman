@@ -25,7 +25,7 @@ def build_lookup(rp, fragment_tracks):
 
 	return track_lookup
 
-parser = argparse.ArgumentParser(description='Extract fragments from repository')
+parser = argparse.ArgumentParser(description='Get metrics results')
 parser.add_argument('rn', type=str, help='Name of the repository')	
 parser.add_argument('rp', type=str, help='Path to the repository')
 parser.add_argument('dbn', type=str, help='Name to the database')

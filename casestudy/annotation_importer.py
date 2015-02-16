@@ -6,7 +6,7 @@ import json
 from git import *
 from pymongo import MongoClient
 
-parser = argparse.ArgumentParser(description='Export annotations from dump file')
+parser = argparse.ArgumentParser(description='Import annotations from dump file')
 parser.add_argument('dbn', type=str, help='Name of the database')
 parser.add_argument('dp', type=str, help='Path to the annotation dump')
 parser.add_argument('rp', type=str, help='Path of the repository')
