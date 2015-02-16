@@ -101,30 +101,30 @@ print '* median number of variant a fragment is shared in:', numpy.median(numpy.
 print '* median number of variant a fragment is shared in:', numpy.average(numpy.array([1] * c + map(len, sccs)))
 
 ############ SIMILARITY EVOLUTIONS TOTAL ############
-# a_e = 0
-# c_e = 0
-# d_e = 0
-# a_s = 0
+a_e = 0
+c_e = 0
+d_e = 0
+a_s = 0
 
-# for evolution in db.similarityEvolutions.find({'repo_path': rp}):
-# 	if evolution['min_diff_ratio'] == 1.0 and evolution['max_diff_ratio'] == 1:
-# 		a_e += 1
-# 	elif evolution['min_diff_ratio'] < 1.0 and evolution['last_diff_ratio'] == 1:
-# 		c_e += 1
-# 	elif evolution['max_diff_ratio'] == 1.0 and evolution['last_diff_ratio'] < 1:
-# 		d_e += 1
-# 	elif evolution['max_diff_ratio'] < 1.0:
-# 		a_s += 1
+for evolution in db.similarityEvolutions.find({'repo_path': rp}):
+	if evolution['min_diff_ratio'] == 1.0 and evolution['max_diff_ratio'] == 1.0:
+		a_e += 1
+	elif evolution['min_diff_ratio'] < 1.0 and evolution['last_diff_ratio'] == 1.0:
+		c_e += 1
+	elif evolution['max_diff_ratio'] == 1.0 and evolution['last_diff_ratio'] < 1.0:
+		d_e += 1
+	else:
+		a_s += 1
 
-# print
-# print '---------'
-# print 'Similarity Evolutions (total)'
-# print '* total', a_e + c_e + d_e + a_s
-# print '* always equal:', a_e
-# print '* converge to equal:', c_e
-# print '* diverge from equal:', d_e
-# print '* always similar:', a_s
-# print '---------'
+print
+print '---------'
+print
+print 'Similarity Evolutions (total)'
+print '* total', a_e + c_e + d_e + a_s
+print '* always equal:', a_e
+print '* converge to equal:', c_e
+print '* diverge from equal:', d_e
+print '* always similar:', a_s
 
 # ############ SIMILARITY EVOLUTIONS UNIQUE ############
 # a_e_conns = []
